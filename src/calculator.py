@@ -1,4 +1,4 @@
-def fun1(x, y):
+def add_two_numbers(x, y):
     """
     Adds two numbers together.
     Args:
@@ -6,7 +6,7 @@ def fun1(x, y):
         y (int/float): Second number.
     Returns:
         int/float: Sum of x and y.
-        Raises:
+    Raises:
         ValueError: If x or y is not a number.
     """
     if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
@@ -14,7 +14,7 @@ def fun1(x, y):
     
     return x + y
 
-def fun2(x, y):
+def subtract(x, y):
     """
     Subtracts two numbers.
     Args:
@@ -22,14 +22,14 @@ def fun2(x, y):
         y (int/float): Second number.
     Returns:
         int/float: Difference of x and y.
-        Raises:
+    Raises:
         ValueError: If x or y is not a number.
     """
     if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
         raise ValueError("Both inputs must be numbers.")
     return x - y
 
-def fun3(x, y):
+def multiply(x, y):
     """
     Multiplies two numbers together.
     Args:
@@ -37,14 +37,32 @@ def fun3(x, y):
         y (int/float): Second number.
     Returns:
         int/float: Product of x and y.
-        Raises:
+    Raises:
         ValueError: If either x or y is not a number.
     """
     if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
         raise ValueError("Both inputs must be numbers.")
     return x * y
 
-def fun4(x,y,z):
+def divide(x, y):
+    """
+    Divides one number by another.
+    Args:
+        x (int/float): Numerator.
+        y (int/float): Denominator.
+    Returns:
+        float: Result of x divided by y.
+    Raises:
+        ValueError: If either x or y is not a number.
+        ZeroDivisionError: If y is zero.
+    """
+    if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
+        raise ValueError("Both inputs must be numbers.")
+    if y == 0:
+        raise ZeroDivisionError("Denominator cannot be zero.")
+    return x / y
+
+def add_three_numbers(x,y,z):
     """
     Adds three numbers together.
     Args:
@@ -58,8 +76,8 @@ def fun4(x,y,z):
     return total_sum
 
 
-# f1_op = fun1(2,3)
-# f2_op = fun2(2,3)
-# f3_op = fun3(2,3)
-# f4_op = fun4(f1_op,f2_op,f3_op)
-
+# f1_op = add_two_numbers(2,3)
+# f2_op = subtract(2,3)
+# f3_op = multiply(2,3)
+# f4_op = add_three_numbers(2, 3, 5)
+# f5_op = divide(2, 3)
