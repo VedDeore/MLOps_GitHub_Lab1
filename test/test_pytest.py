@@ -31,3 +31,12 @@ def test_add_three_numbers():
     assert calculator.add_three_numbers(5,0, -1) == 4
     assert calculator.add_three_numbers (-1, -1, -1) == -3
     assert calculator.add_three_numbers (-1, -1, 100) == 98
+
+def test_power():
+    assert calculator.power(4, 2) == 16
+    assert calculator.power(3, 0) == 1
+    assert calculator.power(0, 7) == 0
+    assert calculator.power(-3, 3) == -27
+    assert calculator.power(-2, 4) == 16
+    assert calculator.power(5, -2) == 0.04
+    assert calculator.power(5, 1) == 5

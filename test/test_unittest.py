@@ -41,5 +41,14 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculator.add_three_numbers(-1, -1, -1), -3)
         self.assertEqual(calculator.add_three_numbers(-1, -1, 100), 98)
 
+    def test_power(self):
+        self.assertEqual(calculator.power(4, 2), 16)
+        self.assertEqual(calculator.power(3, 0), 1)
+        self.assertEqual(calculator.power(0, 7), 0)
+        self.assertEqual(calculator.power(-3, 3), -27)
+        self.assertEqual(calculator.power(-2, 4), 16)
+        self.assertEqual(calculator.power(5, -2), 0.04)
+        self.assertEqual(calculator.power(5, 1), 5)
+
 if __name__ == '__main__':
     unittest.main()

@@ -89,6 +89,7 @@ Now that we have our virtual environment set up, the GitHub repository created, 
 - multiply(x, y) multiplies x and y.
 - divide(x, y) divides x by y.
 - add_three_numbers(x, y) combines the results of the above functions and returns their sum.
+- power(x, y) raises x to the power of y.
 - To view the code and gain a deeper understanding, please refer to the calculator.py file located under the src folder in this [link](https://github.com/raminmohammadi/MLOps/blob/main/src/lab1/calculator.py).
 
 > **Note:** <br>
@@ -117,7 +118,7 @@ Now that we have our virtual environment set up, the GitHub repository created, 
 - Pytest automatically discovers test functions based on naming conventions. It searches for functions starting with test\_ or ending with \_test, and it can discover tests in subdirectories as well. This makes it easy to organize your tests.
 - Pytest supports parametrized tests, which allow you to run the same test function with multiple sets of inputs and expected outputs. This is particularly useful for testing functions with different input scenarios. Please refer the commented out code in the test_pytest.py file for your reference.
 - Let's create a test file named test_pytest.py within the test folder. This file will contain a series of test functions, each aimed at verifying the behavior of specific functions within calculator.py.
-- We've prepared four test functions (test_add_two_numbers, test_subtract, test_multiply, test_divide, and test_add_three_numbers) to test the functions within calculator.py. Each test function uses the assert statement to validate the expected outcomes. Refer the file under test folder for your [reference](https://github.com/raminmohammadi/MLOps/blob/main/Github_Labs/Lab1/test/test_pytest.py).
+- We've prepared four test functions (test_add_two_numbers, test_subtract, test_multiply, test_divide, test_add_three_numbers, and test_power) to test the functions within calculator.py. Each test function uses the assert statement to validate the expected outcomes. Refer the file under test folder for your [reference](https://github.com/raminmohammadi/MLOps/blob/main/Github_Labs/Lab1/test/test_pytest.py).
 - By running these pytest tests, you can verify that your calculator functions are working correctly.
 
 ### Writing Tests with UnitTest
@@ -130,7 +131,7 @@ Now that we have our virtual environment set up, the GitHub repository created, 
 - Unittest relies on test discovery, which means it will find test methods based on naming conventions, similar to Pytest. Test methods must start with "test\_" to be recognized as test cases.
 - Unittest provides a variety of assertion methods, such as assertEqual, assertTrue, assertFalse, and others, to check conditions in your tests. You can choose the assertion method that best suits your testing needs.
 - Let's create a test file named test_unittest.py within the test folder. This file will contain a series of test functions, each aimed at verifying the behavior of specific functions within calculator.py.
-- We've prepared four test functions (test_add_two_numbers, test_subtract, test_multiply, test_divide, and test_add_three_numbers) to test the functions within calculator.py. Each test function uses the self.assertEqual statement to validate the expected outcomes. Refer the file under test folder for your [reference](https://github.com/raminmohammadi/MLOps/blob/main/Github_Labs/Lab1/test/test_unittest.py).
+- We've prepared four test functions (test_add_two_numbers, test_subtract, test_multiply, test_divide, test_add_three_numbers, and test_power) to test the functions within calculator.py. Each test function uses the self.assertEqual statement to validate the expected outcomes. Refer the file under test folder for your [reference](https://github.com/raminmohammadi/MLOps/blob/main/Github_Labs/Lab1/test/test_unittest.py).
 - By running these unittest tests, you can verify that your calculator functions are working correctly.
 
 ## Step 5. Implementing GitHub Actions
